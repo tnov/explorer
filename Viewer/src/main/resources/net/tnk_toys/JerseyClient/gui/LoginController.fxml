@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefHeight="300.0" prefWidth="300.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="-150.0" layoutY="-134.0" prefHeight="300.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="THREAD1">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="startButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onStart" prefHeight="25.0" prefWidth="50.0" text="START" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                        <Button fx:id="endButton" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#onEnd" prefHeight="25.0" prefWidth="50.0" text="END" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="THREAD2">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="serviceStart" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onServiceStart" prefHeight="25.0" prefWidth="50.0" text="S Start" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                        <Button fx:id="serviceEnd" layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onAction="#onServiceEnd" prefHeight="25.0" prefWidth="50.0" text="S End" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0" />
+                     </children></AnchorPane>
+               </content></Tab>
+          <Tab text="BUTTON">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="actionBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAction" text="Button" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                     </children></AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</fx:root>
